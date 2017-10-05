@@ -1,11 +1,13 @@
 defmodule LockApi.Mixfile do
+
+  @version "0.0.2"
   use Mix.Project
 
   def project do
     [
       app: :lock_api,
-      version: "0.0.1",
-      elixir: "~> 1.4",
+      version: @version,
+      elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix, :gettext] ++ Mix.compilers,
       start_permanent: Mix.env == :prod,
