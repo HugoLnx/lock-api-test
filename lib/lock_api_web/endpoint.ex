@@ -1,6 +1,8 @@
 defmodule LockApiWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :lock_api
 
+  plug LockApiWeb.RequestTrackerBegin
+
   socket "/socket", LockApiWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.

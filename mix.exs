@@ -36,7 +36,8 @@ defmodule LockApi.Mixfile do
       {:phoenix_pubsub, "~> 1.0"},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:simultaneous_access_lock, path: "/Users/hugo.figueiredo/mystuff/openrepos/simultaneous_access_lock"}
+      {:simultaneous_access_lock, path: "/Users/hugo.figueiredo/mystuff/openrepos/simultaneous_access_lock"},
+      {:alchemetrics, "~> 0.3.0"},
     ]
   end
 end

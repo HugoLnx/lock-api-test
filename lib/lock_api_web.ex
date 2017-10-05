@@ -23,6 +23,7 @@ defmodule LockApiWeb do
       import Plug.Conn
       import LockApiWeb.Router.Helpers
       import LockApiWeb.Gettext
+      plug LockApiWeb.RequestTrackerEnd
     end
   end
 

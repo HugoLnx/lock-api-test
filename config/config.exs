@@ -22,6 +22,13 @@ config :simultaneous_access_lock,
   ttl: :timer.seconds(30),
   redix: "redis://localhost:6379/0"
 
+config :alchemetrics, reporter_list: [
+  [
+    module: LockApi.Metrics.Reporters.Logstash,
+    opts: [hostname: "logstash.video.dev.globoi.com", port: 8515]
+  ]
+]
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"
