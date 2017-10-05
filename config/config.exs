@@ -8,7 +8,7 @@ use Mix.Config
 # Configures the endpoint
 config :lock_api, LockApiWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "Ism09O0aQVFbc+O+L1Pm42yxuuurJH4EmhpjfVHWlWAHnMhYH36KRi6D3Gc+WoUb",
+  #secret_key_base: "Ism09O0aQVFbc+O+L1Pm42yxuuurJH4EmhpjfVHWlWAHnMhYH36KRi6D3Gc+WoUb",
   render_errors: [view: LockApiWeb.ErrorView, accepts: ~w(json)],
   pubsub: [name: LockApi.PubSub,
            adapter: Phoenix.PubSub.PG2]
