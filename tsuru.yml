@@ -1,0 +1,3 @@
+hooks:
+  build:
+    - tar xvzf .tmp_lock-api-ex-test.tar.gz
